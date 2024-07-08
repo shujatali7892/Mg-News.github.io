@@ -1,0 +1,1 @@
+# Mg-News.github.io
