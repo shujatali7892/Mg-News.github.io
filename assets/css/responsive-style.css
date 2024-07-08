@@ -1,0 +1,71 @@
+@media (min-width: 1421px)  {
+    .filter-news > .dropdown > .dropdown-menu  {   
+        transform: translate(-821px, 32px) !important; 
+        width: 90vw;  
+    }  
+    .lastdropdns .card{
+        height: 40vh;
+        overflow: auto;
+    }
+    .lastdropdns >  .dropdown > .dropdown-menu {
+        transform: translate(-21px, 32px) !important;
+        width: 90vw;
+    } 
+    .feed-page .lastdropdns .card{
+        height: 40vh;
+        overflow: auto;
+    }
+    .feed-page  .lastdropdns >  .dropdown > .dropdown-menu {
+        transform: translate(-21px, 32px) !important;
+        width: 90vw;
+    } 
+    .mgnews-page   .filter-news  > .dropdown > .dropdown-menu   {   
+        width: 90vw; 
+        transform: translate(-11px, 32px) !important; 
+    }  
+    #summernote {
+        height: 500px !important; /* Yahaan apni desired height set karein */
+      }
+    }
+@media (min-width: 1024px) and (max-width: 1420px){
+    .filter-news > .dropdown > .dropdown-menu   {   
+        width: 90vw; 
+        transform: translate(-621px, 32px) !important; 
+    }  
+    .mgnews-page .filter-news > .dropdown > .dropdown-menu   {   
+        width: 90vw; 
+        transform: translate(-21px, 32px) !important; 
+    }  
+    .lastdropdns >  .dropdown > .dropdown-menu {   
+        width: 90vw; 
+        transform: translate(-621px, 32px) !important; 
+    }  
+    .feed-page   .lastdropdns >  .dropdown > .dropdown-menu {   
+        width: 90vw; 
+        transform: translate(-621px, 32px) !important; 
+    } 
+    #summernote {
+        height: 500px !important; /* Yahaan apni desired height set karein */
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1023px){
+        .mgnews-page  .filter-news > .dropdown > .dropdown-menu {
+            width: 90vw;
+            transform: translate(-11px, 32px) !important;
+        }
+        .filter-news > .dropdown > .dropdown-menu  {
+            width: 90vw;  
+            transform: translate(-151px, 32px) !important;
+           
+        }  
+        .lastdropdns > .dropdown > .dropdown-menu {
+            width: 90vw;  
+            transform: translate(-151px, 32px) !important;
+           
+        }  
+        .feed-page   .lastdropdns > .dropdown > .dropdown-menu {
+            width: 90vw;  
+            transform: translate(-151px, 32px) !important;
+           
+        }  
+        }
