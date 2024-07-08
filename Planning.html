@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Planning </title>
+    <link href="./assets/vendor/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/vendor/font/fontawesome-5/css/all.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive-style.css">
+
+</head>
+
+<body>
+    <!--Main Navigation-->
+    <header class="p-0">
+        <!-- Sidebar -->
+
+        <!-- Navbar -->
+        <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+            <!-- Container wrapper -->
+            <div class="container-fluid"> 
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo/mglinknews.webp" height="40" alt="MDB Logo" loading="lazy" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mymenu me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Feed.html">Feed</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./Planning.html">Planning</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Creations.html">Creations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./MGEditor.html"> MG Editor</a>
+                        </li>
+
+                    </ul>
+
+
+                    <!-- Right links -->
+                    <ul class="navbar-nav ms-auto d-flex flex-row">
+                        <!-- Notification dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fas fa-bell"></i>
+                                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Some news</a></li>
+                                <li><a class="dropdown-item" href="#">Another news</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> 
+
+                        <!-- Avatar -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle hidden-arrow d-flex align-items-center" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle"
+                                    height="22" alt="Avatar" loading="lazy" />
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">My profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main class="mb-5">
+        <div class="container-fluid mb-3">
+            <div class="row planingsearch pe-md-2"> 
+                <div class="col-md-2 text-center my-auto">
+                    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#AddPlanning">  <i class="fa fa-plus"></i> &nbsp; Add Planning</button>
+                </div>
+                <div class="col-md-8 col-12">
+                    <div class="searchbtn">
+                    <div class="input-group">
+                        <input class="form-control" type="search" value="Search Keyword"
+                            id="example-search-input">
+                        <span class="input-group-append">
+                            <button class="btn btn-outline-secondary ms-n5" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+                <div class="col-md-2 col-12 my-2 my-md-0">
+                    <div class="lastdropdns">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle hidden-arrow" href="#" id="allone" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            My Shortcuts
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="allone">
+                            <div class="row">
+                                <div class="col-md-3 col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h6>FEEDS</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12  ">
+                                                    <div class="FEEDS">
+                                                        <div class="form-check my-auto">
+                                                            
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-toggle" type="button" id="Textdrop" role="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Texts">  Text
+                                                            </div>
+                                                                <ul class="dropdown-menu" aria-labelledby="Textdrop">
+                                                                  <li><a class="dropdown-item" href="#"> 
+                                                                    <input class="form-check-input" type="checkbox" value="" id="HongNews">
+                                                                    <label class="form-check-label" for="HongNews">Lorem Asia Online Report Top Hong Kong News</label>
+                                                                  </a></li> 
+                                                                  <li><a class="dropdown-item" href="#"> 
+                                                                    <input class="form-check-input" type="checkbox" value="" id="MalaysiaNews">
+                                                                    <label class="form-check-label" for="MalaysiaNews">Lorem Asia Online Report Top Malaysia News</label>
+                                                                  </a></li> 
+                                                                  <li><a class="dropdown-item" href="#"> 
+                                                                    <input class="form-check-input" type="checkbox" value="" id="SingaporeNews">
+                                                                    <label class="form-check-label" for="SingaporeNews">Lorem Asia Online Report Top Singapore News</label>
+                                                                  </a></li> 
+                                                                  <li><a class="dropdown-item" href="#"> 
+                                                                    <input class="form-check-input" type="checkbox" value="" id="WorldService">
+                                                                    <label class="form-check-label" for="WorldService"> Lorem World Service</label>
+                                                                  </a></li> 
+                                                                </ul>
+                                                              </div>   
+                                                          </div>
+                                                          <div class="form-check my-auto">
+                                                            
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-toggle" type="button" id="RawVideotab" role="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <input class="form-check-input" type="checkbox" value="" id="RawVideos">  Raw Video
+                                                            </div>
+                                                                <ul class="dropdown-menu" aria-labelledby="RawVideotab">
+                                                                  <li><a class="dropdown-item" href="#"> 
+                                                                    <input class="form-check-input" type="checkbox" value="" id="Advisory">
+                                                                    <label class="form-check-label" for="Advisory"> Advisory</label>
+                                                                  </a></li> 
+                                                                  <li><a class="dropdown-item" href="#"> 
+                                                                    <input class="form-check-input" type="checkbox" value="" id="AfDaily">
+                                                                    <label class="form-check-label" for="AfDaily"> Af Daily</label>
+                                                                  </a></li> 
+                                                                  <li><a class="dropdown-item" href="#"> 
+                                                                    <input class="form-check-input" type="checkbox" value="" id="CCTVPlusNews">
+                                                                    <label class="form-check-label" for="CCTVPlusNews">CCTV Plus News</label>
+                                                                  </a></li> 
+                                                                  <li><a class="dropdown-item" href="#"> 
+                                                                    <input class="form-check-input" type="checkbox" value="" id="CEEF">
+                                                                    <label class="form-check-label" for="CEEF">CEEF</label>
+                                                                  </a></li> 
+                                                                </ul>
+                                                              </div>   
+                                                          </div>
+                                                          <div class="form-check my-auto">
+                                                            
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-toggle" type="button" id="Picturestab" role="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Picturestab">  Pictures
+                                                            </div>
+                                                                <ul class="dropdown-menu" aria-labelledby="Picturestab">
+                                                                  <li><a class="dropdown-item" href="#"> 
+                                                                    <input class="form-check-input" type="checkbox" value="" id="PictureService">
+                                                                    <label class="form-check-label" for="PictureService"> Lorem News Picture Service - RNPS</label>
+                                                                  </a></li> 
+                                                                   
+                                                                </ul>
+                                                              </div>   
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                                        
+                                        </div> 
+                                    </div> 
+                                </div>
+                                <div class="col-md-3 col-12 my-2 my-md-0">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h6>LOREM READY</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="FEELOREMREADYDS">
+                                                        <div class="form-check my-auto">
+                                                            
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-toggle" type="button" id="Asiatab" role="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Asia">  Asia
+                                                            </div>
+                                                                <ul class="dropdown-menu" aria-labelledby="Asiatab">
+                                                                  <li><a class="dropdown-item" href="#"> 
+                                                                    <input class="form-check-input" type="checkbox" value="" id="AsiaBusiness">
+                                                                    <label class="form-check-label" for="AsiaBusiness">Lorem Ready - Asia Business</label>
+                                                                  </a></li> 
+                                                                  <li><a class="dropdown-item" href="#"> 
+                                                                    <input class="form-check-input" type="checkbox" value="" id="AsiaTop">
+                                                                    <label class="form-check-label" for="AsiaTop">Lorem Ready - Asia Top</label>
+                                                                  </a></li>  
+                                                                </ul>
+                                                              </div>   
+                                                          </div>
+                                                          <div class="form-check my-auto">
+                                                            
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-toggle" type="button" id="Entertainmenttab" role="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Entertainment"> Entertainment
+                                                            </div>
+                                                                <ul class="dropdown-menu" aria-labelledby="Entertainmenttab">
+                                                                  <li><a class="dropdown-item" href="#"> 
+                                                                    <input class="form-check-input" type="checkbox" value="" id="ReadyEntertainment">
+                                                                    <label class="form-check-label" for="ReadyEntertainment">Ready Entertainment</label>
+                                                                  </a></li>  
+                                                                </ul>
+                                                              </div>   
+                                                          </div>
+                                                          <div class="form-check my-auto">
+                                                            
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-toggle" type="button" id="Environmenttab" role="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Environment">  Environment
+                                                            </div>
+                                                                <ul class="dropdown-menu" aria-labelledby="Environmenttab">
+                                                                  <li><a class="dropdown-item" href="#"> 
+                                                                    <input class="form-check-input" type="checkbox" value="" id="PictureService">
+                                                                    <label class="form-check-label" for="PictureService"> Lorem Ready  Environment</label>
+                                                                  </a></li> 
+                                                                   
+                                                                </ul>
+                                                              </div>   
+                                                          </div>
+                                                          <div class="form-check my-auto">
+                                                            
+                                                            <div class="dropdown">
+                                                                <div class="dropdown-toggle" type="button" id="Healthtab" role="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Health">  Health
+                                                            </div>
+                                                                <ul class="dropdown-menu" aria-labelledby="Healthtab">
+                                                                  <li><a class="dropdown-item" href="#"> 
+                                                                    <input class="form-check-input" type="checkbox" value="" id="PictureService">
+                                                                    <label class="form-check-label" for="PictureService"> Lorem Ready  Health </label>
+                                                                  </a></li> 
+                                                                   
+                                                                </ul>
+                                                              </div>   
+                                                          </div>
+                                                    </div>
+                                                    <div class="form-check my-auto">
+                                                            
+                                                        <div class="dropdown">
+                                                            <div class="dropdown-toggle" type="button" id="Indiatab" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <input class="form-check-input" type="checkbox" value="" id="India">  India
+                                                        </div>
+                                                            <ul class="dropdown-menu" aria-labelledby="Indiatab">
+                                                              <li><a class="dropdown-item" href="#"> 
+                                                                <input class="form-check-input" type="checkbox" value="" id="PictureService">
+                                                                <label class="form-check-label" for="PictureService"> Lorem eady - India Business </label>
+                                                              </a></li> 
+                                                               
+                                                            </ul>
+                                                          </div>   
+                                                      </div>
+                                                </div>
+                                            </div>
+                
+                                            
+                                        </div> 
+                                    </div> 
+                                </div>
+                                <div class="col-md-3 col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h6>FEED SEARCHES</h6>
+                                        </div>
+                                        <div class="card-body">
+                
+                                            <div class="FEED SEARCHES">
+                                               
+                                            </div>
+                                        </div> 
+                                    </div>
+                              
+                                </div>
+                                <div class="col-md-3 col-12 my-2 my-md-0">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h6>PLANNING SEARCHES</h6>
+                                        </div>
+                                        <div class="card-body">
+                
+                                            <div class="MEDIATYPE">
+                                                
+                                            </div>
+                                        </div> 
+                                    </div>
+                              
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container mb-5"> 
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                <div class="row">
+                    <div class="col-md-3 col-6 my-md-auto my-2">
+                        <div class="itemcounting">
+                            <label for=""><b> 100 items</b></label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 my-md-auto my-2">
+                        <div class="celedersbtn">
+                            <div class="dropdown">
+                                <a class="nav-link dropdown-toggle  " href="#" id="celedersdropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa  fa-calendar "></i>
+                                     
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="celedersdropdown"> 
+                                    <li class=""><a class="dropdown-item" href="#">  Next week  </a></li>
+                                    <li class=""><a class="dropdown-item" href="#">  Thirty Days  </a></li>
+                                    <li class=""><a class="dropdown-item" href="#">  All Available </a></li>
+                                    <li class=""><a class="dropdown-item" href="#"> Day </a></li>
+                                    <li class=""><a class="dropdown-item" href="#">  Range  </a></li>
+                                    <li class=""><a class="dropdown-item" href="#">  Apply </a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 my-md-auto my-2">
+                        <button class="btn btn-sm btn-secondary" disabled> Today</button>
+                    </div>
+                    <div class="col-md-3 col-6 my-md-auto my-2">
+                        <div class="nextprvebtns">
+                            <spaan class="prvebtn"><i class="fa  fa-chevron-left"></i></spaan>
+                            <spaan class="nextbtn"><i class="fa  fa-chevron-right"></i></spaan>
+                        </div>
+                    </div>
+                </div>    
+                </div>
+                <div class="col-lg-6 col-12 my-3 my-lg-0"> 
+                    <div class="row">
+                        <div class="col-md-4 col-7 mx-auto my-md-auto my-2">
+                            <div class="fallowingcheck">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                      Following &nbsp; <i class="fa fa-info-circle"></i>
+                                    </label>
+                                  </div>
+                            </div>
+                        </div> 
+                        <div class="col-md-4 col-7 mx-auto my-md-auto my-2">
+                            <div class="filter-news">
+                                <div class="dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="filterdropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-filter"></i> &nbsp; Filter
+                                         
+                                    </a>
+                                    <div class="dropdown-menu " aria-labelledby="filterdropdown"> 
+                                        <div class="row">
+                                            <div class="col-md-4 col-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h6>MEDIA TYPE</h6>
+                                                    </div>
+                                                    <div class="card-body">
+                            
+                                                        <div class="MEDIATYPE">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Graphics">
+                                                                <label class="form-check-label" for="Graphics">
+                                                                    Graphics
+                                                                </label>
+                                                              </div>
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="LiveVideo">
+                                                                <label class="form-check-label" for="LiveVideo">
+                                                                    Live Video
+                                                                </label>
+                                                              </div>
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Pictures">
+                                                                <label class="form-check-label" for="Pictures">
+                                                                    Pictures
+                                                                </label>
+                                                              </div>
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Text">
+                                                                <label class="form-check-label" for="Text">
+                                                                    Text
+                                                                </label>
+                                                              </div>
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Video">
+                                                                <label class="form-check-label" for="Video">
+                                                                      Video
+                                                                </label>
+                                                              </div>
+                                                        </div>
+                                                    </div> 
+                                                </div> 
+                                            </div>
+                                            <div class="col-md-4 col-12 my-2 my-md-0">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h6>CATEGORY</h6>
+                                                    </div>
+                                                    <div class="card-body">
+                            
+                                                        <div class="MEDIATYPE">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="BusinessFinance">
+                                                                <label class="form-check-label" for="BusinessFinance">
+                                                                    Business & Finance
+                                                                </label>
+                                                              </div>
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="EntertainmentLeisure">
+                                                                <div class="dropdown">
+                                                                    <button class="btn btn-light dropdown-toggle" type="button" id="filterdropdown12" role="button"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                        Entertainment & Leisure
+                                                                    </button>
+                                                                    <ul class="dropdown-menu" aria-labelledby="filterdropdown12">
+                                                                      <li><a class="dropdown-item" href="#"> 
+                                                                        <input class="form-check-input" type="checkbox" value="" id="EntertainmentLeisure">
+                                                                        <label class="form-check-label" for="EntertainmentLeisure">Oddly Enough</label>
+                                                                      </a></li> 
+                                                                    </ul>
+                                                                  </div>   
+                                                              </div>
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Pictures">
+                                                                <label class="form-check-label" for="Pictures">
+                                                                    Pictures
+                                                                </label>
+                                                              </div>
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Text">
+                                                                <label class="form-check-label" for="Text">
+                                                                    Text
+                                                                </label>
+                                                              </div>
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Video">
+                                                                <label class="form-check-label" for="Video">
+                                                                      Video
+                                                                </label>
+                                                              </div>
+                                                        </div>
+                                                    </div> 
+                                                </div> 
+                                            </div>
+                                            <div class="col-md-4 col-12">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h6>MEDIA TYPE</h6>
+                                                    </div>
+                                                    <div class="card-body">
+                            
+                                                        <div class="MEDIATYPE">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Graphics">
+                                                                <label class="form-check-label" for="Graphics">
+                                                                    Graphics
+                                                                </label>
+                                                              </div>
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="LiveVideo">
+                                                                <label class="form-check-label" for="LiveVideo">
+                                                                    Live Video
+                                                                </label>
+                                                              </div>
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Pictures">
+                                                                <label class="form-check-label" for="Pictures">
+                                                                    Pictures
+                                                                </label>
+                                                              </div>
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Text">
+                                                                <label class="form-check-label" for="Text">
+                                                                    Text
+                                                                </label>
+                                                              </div>
+                                                              <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" value="" id="Video">
+                                                                <label class="form-check-label" for="Video">
+                                                                      Video
+                                                                </label>
+                                                              </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                          
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div> 
+                        <div class="col-md-4 col-7 mx-auto my-md-auto my-2">
+                            <div class="download-dropdwn">
+                                <div class="dropdown">
+                                    <a class="nav-link dropdown-toggle  " href="#" id="celedersdropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa  fa-download"></i> &nbsp; Download &nbsp;   <i class="fa  fa-info-circle"></i> 
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="celedersdropdown"> 
+                                        <li class=""><a class="dropdown-item" href="#">  CSV</a></li>
+                                        <li class=""><a class="dropdown-item" href="#">  PDF  </a></li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div> </div>
+            </div>
+            <div class="row mt-2">
+        <div class="col-12 mb-3 datetab show-change">
+            <div class="news-date" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <span class="left-dash"> </span>
+                <span class="newsdatetime">
+                    <strong>Wednesday July 3, 2024</strong>
+                   
+                </span>
+                <span class="right-dash"> </span> &nbsp; &nbsp;
+                <i class="fa fa-chevron-right"></i> 
+            </div>
+        </div> 
+        <div class="col-12">
+            <div class="collapse show" id="collapseExample">
+                <div class="news-cardgroup">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                
+                                <div class="card-body p-1">
+                                   <div class="row">
+                                    <div class="col-md-2 col-12 my-auto text-center">
+                                         <div class="newsdate" id="">
+                                        <label> <strong > 03-07-2024   </strong>   </label> 
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                      <div class="news-subtile">
+                                        <h6> GOLF-EUROPE/BMW</h6>
+                                    </div>
+                                    <div class="news-maintile">
+                                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, asperiores?</h5>
+                                    </div>
+                                    <div class="news-discrbion">
+                                        <p class="mb-0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus odio dolores aliquid iste, commodi at.</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-2 col-12 my-auto">
+                                        <div class="countrytitles my-auto">
+                                             <label> <strong>New York ,</strong>   </label>  <br>
+                                             <label> <strong>Pakistan ,</strong>   </label>   <br>
+                                             <label> <strong>India</strong>   </label>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-12 my-auto">
+                                        <div class="newstyps"> 
+                                            <h6><strong>Lorem</strong></h6>
+                                            <p><i class="fas fa-list"></i> &nbsp; Text</p>
+                                        </div>
+                                    </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 my">
+                            <div class="card">
+                                
+                                <div class="card-body p-1">
+                                   <div class="row">
+                                    <div class="col-md-2 col-12 my-auto text-center">
+                                         <div class="newsdate" id="">
+                                        <label> <strong > 12-11-2024   </strong>   </label> 
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                      <div class="news-subtile">
+                                        <h6> Lorem ipsum dolor sit amet.</h6>
+                                    </div>
+                                    <div class="news-maintile">
+                                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, asperiores?</h5>
+                                    </div>
+                                    <div class="news-discrbion">
+                                        <p class="mb-0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus odio dolores aliquid iste, commodi at.</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-2 col-12 my-auto">
+                                        <div class="countrytitles my-auto">
+                                             <label> <strong>Lorem,  </strong>   </label>  <br>
+                                             <label> <strong>ipsum ,</strong>   </label>   <br>
+                                             <label> <strong>dolor</strong>   </label>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-12 my-auto ">
+                                        <div class="newstyps"> 
+                                            <h6><strong>Lorem</strong></h6>
+                                            <p><i class="fas fa-play"></i> &nbsp; Video</p>
+                                            <div class="fllow-btn">
+                                                <button class="btn btn-sm btn-secondary">Follow</button>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card">
+                                
+                                <div class="card-body p-1">
+                                   <div class="row">
+                                    <div class="col-md-2 col-12 my-auto text-center">
+                                         <div class="newsdate" id="">
+                                        <label> <strong > 03-07-2024   </strong>   </label> 
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                      <div class="news-subtile">
+                                        <h6> GOLF-EUROPE/BMW</h6>
+                                    </div>
+                                    <div class="news-maintile">
+                                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, asperiores?</h5>
+                                    </div>
+                                    <div class="news-discrbion">
+                                        <p class="mb-0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus odio dolores aliquid iste, commodi at.</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-2 col-12 my-auto">
+                                        <div class="countrytitles my-auto">
+                                             <label> <strong>New York ,</strong>   </label>  <br>
+                                             <label> <strong>Pakistan ,</strong>   </label>   <br>
+                                             <label> <strong>India</strong>   </label>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-12 my-auto">
+                                        <div class="newstyps"> 
+                                            <h6><strong>Lorem</strong></h6>
+                                            <p><i class="fas fa-image"></i> &nbsp; Pictures</p>
+                                            <div class="fllow-btn">
+                                                <button class="btn btn-sm btn-secondary">Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 my">
+                            <div class="card">
+                                
+                                <div class="card-body p-1">
+                                   <div class="row">
+                                    <div class="col-md-2 col-12 my-auto text-center">
+                                         <div class="newsdate" id="">
+                                        <label> <strong > 12-11-2024   </strong>   </label> 
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                      <div class="news-subtile">
+                                        <h6> Lorem ipsum dolor sit amet.</h6>
+                                    </div>
+                                    <div class="news-maintile">
+                                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, asperiores?</h5>
+                                    </div>
+                                    <div class="news-discrbion">
+                                        <p class="mb-0"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus odio dolores aliquid iste, commodi at.</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-2 col-12 my-auto">
+                                        <div class="countrytitles my-auto">
+                                             <label> <strong>Lorem,  </strong>   </label>  <br>
+                                             <label> <strong>ipsum ,</strong>   </label>   <br>
+                                             <label> <strong>dolor</strong>   </label>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-12 my-auto">
+                                        <div class="newstyps"> 
+                                            <h6><strong>Lorem</strong></h6>
+                                            <p> 
+                                                <span><i class="fas fa-list"></i> &nbsp; Text</span>  &nbsp;  &nbsp;
+                                                <span> <i class="fas fa-play"></i> &nbsp; Video </span>
+                                                 </p>
+                                            <div class="fllow-btn">
+                                                <button class="btn btn-sm btn-secondary">Follow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    </main>
+    <!--Main layout-->
+ 
+    
+        <!-- modal end here -->
+ 
+  
+  <!-- Modal -->
+  <div class="modal fade" id="AddPlanning" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="AddPlanningLabel">Add Planning</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <form>
+            <div class="row">
+                <div class="col-md-6 col-12"> 
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control" id="title" aria-describedby="titleHelp">
+                        
+                    </div>  
+                <div class="col-md-6 col-12"> 
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>  
+                    </div>
+             <div class="row my-2">
+                <div class="col-md-6 col-12">
+                    <label for="category" class="form-label">Category</label>
+                    <select class="form-select" id="category">
+                        <option selected>Choose...</option>
+                        <option value="1">Category 1</option>
+                        <option value="2">Category 2</option>
+                        <option value="3">Category 3</option>
+                    </select>
+                    </div>
+                <div class="col-md-6 col-12">
+                        <label for="priority" class="form-label">Priority</label>
+                        <select class="form-select" id="priority">
+                            <option selected>Choose...</option>
+                            <option value="1">High</option>
+                            </select>
+                    </div> 
+                    </div>
+             <div class="row"> 
+                <div class="col-md-6 col-12">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="isPrivate">
+                        <label class="form-check-label" for="isPrivate">Private</label>
+                    </div>
+                    </div>
+                <div class="col-md-6 col-12">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="isReminder">
+                        <label class="form-check-label" for="isReminder">Reminder</label>
+                    </div> 
+                   </div>
+        </div>
+
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary" data-bs-target="submit">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./assets/js/popper.min.js"></script>
+        <script src="./assets/vendor/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+        <script>
+             $(document).ready(function() {
+        $('.datetab').click(function() {
+            $('.datetab').toggleClass('show-change hide-change');
+            $('.datetab i').toggleClass('fa-chevron-down fa-chevron-right');
+        });
+    });
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.dropdown-menu .dropdown').forEach(function (dropdown) {
+        dropdown.addEventListener('click', function (event) {
+            event.stopPropagation();
+        });
+    });
+});
+        </script>
+  
+        
+</body>
+
+</html>
